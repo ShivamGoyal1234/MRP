@@ -1,0 +1,38 @@
+-- RegisterNetEvent('onDatabaseConnect', function(data)
+--     local MongoDB = exports.cluster:Load()
+--     --[[local r =]] MongoDB.FindInsertUpdate('Game', {
+--         collection = 'banking',
+--         query = {
+--             test = 'gem'
+--         },
+--         document = {
+--             test = 'gem',
+--             same = 'inserted cause data not found'
+--         },
+--         update = {
+--             ["$set"] = { 
+--                 same = 'Updated cause data found found'
+--             }
+--         }
+--     },function(a,b,c,d)
+--         if not a then
+--             print(b)
+--         else
+--             print(b,c,d)
+--         end
+--     end)
+--     -- print(tablePrintOut(r))
+-- end)
+
+-- function tablePrintOut(table)
+--     if type(table) == 'table' then
+--        local s = '\n{ '
+--        for k,v in pairs(table) do
+--           if type(k) ~= 'number' then k = '"'..k..'"' end
+--           s = s .. '['..k..'] = ' .. tablePrintOut(v) .. ',\n'
+--        end
+--        return s .. '}'
+--     else
+--        return tostring(table)
+--     end
+--  end

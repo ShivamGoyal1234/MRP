@@ -1,0 +1,1 @@
+MRFW = exports['mrfw']:GetCoreObject()

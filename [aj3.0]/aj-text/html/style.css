@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+:root {
+    --primary-bg: rgba(0, 100, 232, 90%);
+    --active-bg: #dc143c;
+    --font-color: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 300;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+#container1 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.text1 {
+    top: 10%;
+    position: absolute;
+    background: var(--primary-bg);
+    color: var(--font-color);
+    margin-top: 0.5rem;
+    padding: 0.45rem;
+    border-radius: 0.6rem;
+    box-shadow:10px 0px 14px rgb(0 0 0 / 80%) inset
+}
+
+#container2 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.text2 {
+    top: 20%;
+    position: absolute;
+    background: var(--primary-bg);
+    color: var(--font-color);
+    margin-top: 0.5rem;
+    padding: 0.45rem;
+    border-radius: 0.6rem;
+    box-shadow:10px 0px 14px rgb(0 0 0 / 80%) inset
+}
+#container3 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.text3 {
+    top: 30%;
+    position: absolute;
+    background: var(--primary-bg);
+    color: var(--font-color);
+    margin-top: 0.5rem;
+    padding: 0.45rem;
+    border-radius: 0.6rem;
+    box-shadow:10px 0px 14px rgb(0 0 0 / 80%) inset
+}
+#container4 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.text4 {
+    top: 40%;
+    position: absolute;
+    background: var(--primary-bg);
+    color: var(--font-color);
+    margin-top: 0.5rem;
+    padding: 0.45rem;
+    border-radius: 0.6rem;
+    box-shadow:10px 0px 14px rgb(0 0 0 / 80%) inset
+}
+#container5 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.text5 {
+    top: 50%;
+    position: absolute;
+    background: var(--primary-bg);
+    color: var(--font-color);
+    margin-top: 0.5rem;
+    padding: 0.45rem;
+    border-radius: 0.6rem;
+    box-shadow:10px 0px 14px rgb(0 0 0 / 80%) inset
+}
+#container6 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.text6 {
+    top: 60%;
+    position: absolute;
+    background: var(--primary-bg);
+    color: var(--font-color);
+    margin-top: 0.5rem;
+    padding: 0.45rem;
+    border-radius: 0.6rem;
+    box-shadow:10px 0px 14px rgb(0 0 0 / 80%) inset
+}
+#container7 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.text7 {
+    top: 70%;
+    position: absolute;
+    background: var(--primary-bg);
+    color: var(--font-color);
+    margin-top: 0.5rem;
+    padding: 0.45rem;
+    border-radius: 0.6rem;
+    box-shadow:10px 0px 14px rgb(0 0 0 / 80%) inset
+}
+#container8 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.text8 {
+    top: 80%;
+    position: absolute;
+    background: var(--primary-bg);
+    color: var(--font-color);
+    margin-top: 0.5rem;
+    padding: 0.45rem;
+    border-radius: 0.6rem;
+    box-shadow:10px 0px 14px rgb(0 0 0 / 80%) inset
+}
+#container9 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.text9 {
+    top: 90%;
+    position: absolute;
+    background: var(--primary-bg);
+    color: var(--font-color);
+    margin-top: 0.5rem;
+    padding: 0.45rem;
+    border-radius: 0.6rem;
+    box-shadow:10px 0px 14px rgb(0 0 0 / 80%) inset
+}
+#container10 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.text10 {
+    top: 100%;
+    position: absolute;
+    background: var(--primary-bg);
+    color: var(--font-color);
+    margin-top: 0.5rem;
+    padding: 0.45rem;
+    border-radius: 0.6rem;
+    box-shadow:10px 0px 14px rgb(0 0 0 / 80%) inset
+}
+
+.text.pressed {
+    background: var(--active-bg);
+}
+
+.top {
+    left: 45vw;
+    top: -100px;
+}
+.top.show {
+    transition: 0.5s;
+    top: 10px;
+    opacity: 1;
+}
+.top.hide {
+    transition: 0.5s;
+    top: -100px;
+    opacity: 0;
+}
+
+.right {
+    top: 50%;
+    right: -100px;
+}
+.right.show {
+    transition: 0.5s;
+    right: 10px;
+    opacity: 1;
+}
+.right.hide {
+    transition: 0.5s;
+    right: -100px;
+    opacity: 0;
+}
+
+.left {
+    left: -100px;
+}
+
+.left.show {
+    transition: 0.5s;
+    left: 10px;
+    opacity: 1;
+}
+.left.hide {
+    transition: 0.5s;
+    left: -100px;
+    opacity: 0;
+}

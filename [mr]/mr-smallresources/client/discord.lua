@@ -1,0 +1,16 @@
+CreateThread(function()
+    while true do
+		SetDiscordAppId(966967645855432744)
+		SetDiscordRichPresenceAsset('lolo')
+        -- SetDiscordRichPresenceAssetSmall('1324234r5')
+		local pName = GetPlayerName(PlayerId())
+        SetDiscordRichPresenceAssetText('Mirzapur Roleplay')
+        SetDiscordRichPresenceAssetSmallText('https://discord.gg/j3NvcCQB3p')
+        MRFW.Functions.TriggerCallback('smallresources:server:GetCurrentPlayers', function(result)
+			SetRichPresence(result..'/40 Players')
+        end)
+        SetDiscordRichPresenceAction(0, "Join Discord!", "https://discord.gg/j3NvcCQB3p")
+        SetDiscordRichPresenceAction(1, "Join Fivem!", "fivem://connect/172.65.194.8:8825")
+	Wait(30000)
+    end
+end)

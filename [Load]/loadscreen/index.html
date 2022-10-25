@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      Loading Screen
+    </title>
+
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <meta content="" name="keywords">
+    <meta content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" name="viewport">
+    <link href="css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/style-dark.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/css.css" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/colors/yellow-2.css" media="screen" rel="stylesheet" title="yellow-2" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900%7CDosis:200,300,400,500,600,700,800%7COswald:300,400,700%7CMontserrat:400,700" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+
+    <!-- <div class="film-grain"></div> -->
+
+    <div id="preloader">
+      <div id="preloader-status">
+        <div class="preloader-position preloader-effect">
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <div
+    class="hero-fullscreen hero-bg">
+      <div class="slide-YT hero-fullscreen">
+        <div class="slide bg-img-YT"></div>
+        <div id="videoContainment"></div><a class="player" data-property="{videoURL:'https://youtu.be/iHaMH8hmrsg', mute:true, showControls:false, quality:'default', opacity:1, containment:'#videoContainment', optimizeDisplay:true, loop:true, startAt:0, autoPlay:true, showYTLogo:false, addRaster:false, realfullscreen:true}" id="bgndVideo"></a>
+      </div>
+      <div class="preload-content"></div>
+    </div>
+
+    <div class="menu-trigger top-position" id="menu">
+      <button class="lines-button minus menu-toggle" id="main-menu-caller" type="button"><span class="lines"></span></button>
+    </div>
+
+    <svg id="cursor" width="20" height="20">
+      <defs>
+        <linearGradient id="gradient" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#f2c061"></stop>
+          <stop offset="100%" stop-color="#da1b60"></stop>
+        </linearGradient>
+      </defs>
+      <circle r="07" cx="10" cy="10" fill="none"></circle>
+      <line x1="0" y1="0" x2="20" y2="20"></line>
+      <line x1="0" y1="20" x2="20" y2="0"></line>
+    </svg>
+
+    <div id="ui-layer">
+      <div id="menu-wrapper">
+        <div id="main-menu">
+          <div class="menu-nav-wrapper">
+            <nav class="menu-nav">
+              <ul class="brackets">
+                <li class="menu">
+                  <a class="menu-state active"
+                    href="#"
+                    id="fire-home">Start</a>
+                </li>
+                <li class="menu">
+                  <a class="menu-state" href="#" id="fire-services">UPDATES</a>
+                </li>
+                <li class="menu">
+                  <a class="menu-state" href="#" id="fire-contact">Credits</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="upper-page current"
+        id="home">
+      <div class="logo top-position"></div>
+
+      <div class="line-left left-position"></div>
+
+      <div class="transparent-borders OFF"></div>
+      <div class="center-container-home">
+
+        <div class="center-block-home">
+
+          <div class="upper-content">
+
+            <div class="container sections">
+
+              <div class="row">
+
+                <div class="fin-wrapper introduction">
+
+                  <div class="fin-slides-wrapper">
+                    <ul class="fin-slides">
+                      <li>
+                        <h3>
+                          ACTIVE STAFF & DEVELOPMENT
+                        </h3>
+                      </li>
+                      <li>
+                        <h3>
+                          NO POWERGAMING ACCEPTED
+                        </h3>
+                      </li>
+                      <li>
+                        <h3>
+                          HACKER FREE CITY (NO CHANCE OF HACKERS) 
+                        </h3>
+                      </li>
+                      <li>
+                        <h3>
+                          DDOS FREE CITY (NO CHANCE OF GETTING DDOS) 
+                        </h3>
+                      </li>
+					            <li>
+                        <h3>
+                          IMMIDEATE ACTION ON /REPORT
+                        </h3>
+                      </li>
+					            <li>
+                        <h3>
+                          YOU ALL ARE UNDER SURVELLIANCE
+                        </h3>
+                      </li>
+                    </ul>
+                  </div>               
+                  <div class="fin-heading">
+                    <h1 class="fin-heading">
+                    Mirzapur  <br>
+                    ROLEPLAY
+                    </h1>
+                  </div>
+                  <div class="fin-subheading">
+                    &middot; Discord:-https://discord.gg/j3NvcCQB3p &middot;<br>                          
+                      <audio id='muzica' volume='0.1' controls autoplay loop>
+                        <source id="sourcefile" src="" type="audio/mpeg">
+                      </audio>
+                      <script>
+                        var rand = [
+                            'musica_video_anonymous.mp3',
+                            'musica_video_anonymous1.mp3'
+                          ];
+
+                        var randSound = rand[Math.floor(Math.random() * rand.length)];
+                        var audio = document.getElementById("muzica");
+                        var sourceMp3=document.getElementById('sourcefile');
+                        audio.volume = 0.2;
+                        console.log(randSound)
+                        sourceMp3.src='' + randSound + '';
+                        audio.load();
+                        audio.play()
+                      </script>             
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lower-page"
+        id="services">
+
+      <div class="center-container">
+
+        <div class="center-block">
+
+          <div class="lower-content">
+
+            <div class="container sections">
+
+              <div class="row">
+                <h4>
+                  //
+                </h4>
+                <h2>
+                  MRP<span class="get-behind">Update</span>
+                </h2>
+              </div>
+
+              <div class="row">
+                <div class="dividerOT"></div>
+              </div>
+
+              <div class="services-columns">
+
+                <div class="row">
+                  <div class="col-md-6 services-padding mb40">
+                    <p>
+                      1.<a>New Loading Screen <br></a>
+                    </p>
+                    <p>
+                      2.<a>NEW PD DASHCAM<br></a>
+                    </p>
+                    <p>
+                      3.<a>NEW LOTTERY TICKETS<br></a>
+                    </p>
+                    <p>
+                      4.<a>Customized Handling of all Cars<br></a>
+                    </p>
+                    <p>
+                      5.<a>Lots of NEW Vehicles<br></a>
+                    </p>
+                    <p>
+                      6.<a>Changed PDM<br></a>
+                    </p>
+                    <p>
+                      7.<a>Server is now more optimized and smoother than ever!<br></a>
+                    </p>
+                    <p>
+                      8.<a>All reported glitches fixed.<br></a>
+                    </p>
+                    <p>
+                      Many more things has been added Please check out server change log!<br></a>
+                    </p>
+
+                  </div>
+                 
+                </div>
+                <div class="row">
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="lower-page"
+        id="contact">
+
+      <div class="center-container">
+
+        <div class="center-block">
+
+          <div class="lower-content">
+
+            <div class="container sections">
+
+              <div class="row">
+                <h4>
+                  //
+                </h4>
+                <h2>
+                  Credits <span class="get-behind">CREDITS</span>
+                </h2>
+              </div>
+
+              <div class="row">
+                <div class="dividerOT"></div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-4">
+                  <span class="awesome-contact"><i class="fab fa-discord"></i></span>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="js/plugins.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+AJFW = exports['ajfw']:GetCoreObject()

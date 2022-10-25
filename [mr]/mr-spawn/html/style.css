@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.container {
+    font-family: 'Poppins', sans-serif;
+}
+
+.spawn-locations {
+    text-transform: uppercase;
+    position: absolute;
+    top: 30vh;
+    left: 70vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 2.8vh;
+    padding: 30px;
+    cursor: default;
+}
+
+.location {
+    width: 28vh;
+    height: 4.5vh;
+    margin-bottom: 2vh;
+    transition: 0.2s;
+    transition: .1s linear;
+    border-radius: 2.3vh;
+    cursor: pointer;
+}
+
+.location > p {
+    position: relative;
+    color: #ededed;
+    text-align: center;
+    line-height: 4.5vh;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.8vh;
+}
+
+.location:hover {
+    background-color: #036aa2;
+    transition: 0.2s;
+}
+
+.selected {
+    background-color: #0095E3;
+}
+
+.submit-spawn {
+    background-color: #28a745;
+    width: 28vh;
+    height: 4.5vh;
+    margin-bottom: .75vh;
+    transition: 0.2s;
+    border-radius: 2.3vh;
+    cursor: pointer;
+}
+
+.submit-spawn > p {
+    position: relative;
+    color: white;
+    text-align: center;
+    line-height: 4.5vh;
+    font-size: 1.6vh;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.submit-spawn:hover {
+    transition: 0.2s;
+}
+
+#spawn-label {
+    color: #ededed;
+    font-weight: bold;
+}
+
+.loclabel {
+    width: 28vh;
+    height: 4vh;
+    transition: 0.2s;
+}
+
+.loclabel > p {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    position: relative;
+    font-style: italic;
+    font-weight: bold;
+    color: #ededed;
+    text-align: center;
+    font-size: 1.5vh;
+}

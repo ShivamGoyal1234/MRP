@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+
+body {
+    background: transparent !important;
+    margin-top: 80px;
+}
+
+#bankingContainer {
+    background: #000000a4 !important;
+    border-radius: 7px;
+    min-height: 800px;
+    max-height: 800px;
+    display: none;
+}
+
+#ATMContainer {
+    background: #000000a4 !important;
+    border-radius: 20px;
+    min-height: 800px;
+    max-height: 800px;
+    display: none;
+    border: 2px solid red;
+}
+
+.statement:hover {
+    background: rgba(150, 149, 149, 0.5) !important;
+}
+
+#v-pills-tabContent,
+#v-pills-tabContent-atm {
+    overflow-y: scroll;
+    min-height: 100%;
+}
+
+#v-pills-tabContent::-webkit-scrollbar-track,
+#v-pills-tabContent-atm::-webkit-scrollbar-track {
+    background-color: transparent;
+    border: none;
+}
+
+#v-pills-tabContent::-webkit-scrollbar-thumb,
+#v-pills-tabContent-atm::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border: none;
+}
+
+#v-pills-tabContent::-webkit-scrollbar,
+#v-pills-tabContent-atm::-webkit-scrollbar {
+    width: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: transparent
+}
+
+.title {
+    color: white;
+    margin-bottom: 15px;
+    font-weight: bolder;
+    border-left: 2px solid red;
+}
+
+.content {
+    color: white;
+    font-size: 20px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: rgb(255, 255, 255);
+    background-color: #DC143C;
+}
+
+.btn-primary {
+    color: rgb(255, 255, 255);
+    background-color: #DC143C;
+    border-color: transparent;
+}
+
+.btn-primary:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(90, 98, 104);
+    border-color: rgb(84, 91, 98);
+}
+
+.btn-secondary {
+    color: rgb(255, 255, 255);
+    background-color: #28a745;
+}
+
+#withdrawAmount.form-control{
+    color: black;
+    background-color: rgb(163, 163, 163);
+    font-weight: 1000;
+}
+
+#depositAmount.form-control{
+    color: black;
+    background-color: rgb(163, 163, 163);
+    font-weight: 1000;
+}
+
+#transferAcctNo.form-control{
+    color: black;
+    background-color: rgb(163, 163, 163);
+    font-weight: 1000;
+}
+
+#transferAmount.form-control{
+    color: black;
+    background-color: rgb(163, 163, 163);
+    font-weight: 1000;
+}
+
+#savingsAction.form-control{
+    color: black;
+    background-color: rgb(163, 163, 163);
+    font-weight: 1000;
+}
+
+#savingsTAmount.form-control{
+    color: black;
+    background-color: rgb(163, 163, 163);
+    font-weight: 1000;
+}
+
+.custom-select.custom-select-sm.form-control.form-control-sm {
+    color: black;
+    background-color: rgb(163, 163, 163);
+    font-weight: 1000;
+}
+
+.form-control.form-control-sm {
+    color: black;
+    background-color: rgb(163, 163, 163);
+    font-weight: 1000;
+}
+
+#cardPinNumber.form-control {
+    color: black;
+    background-color: rgb(163, 163, 163);
+    font-weight: 1000;
+}
+
+.small,
+small {
+    font-size: 95%;
+    font-weight: bolder;
+}
+
+#savingsBalance {
+    color: #28a745;
+}

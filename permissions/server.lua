@@ -1,0 +1,1 @@
+TriggerEvent('Refresh:permissions')
