@@ -669,7 +669,7 @@ RegisterNetEvent('jacob-carboost:client:vinscratch', function(veh)
         animDict = '"anim@amb@clubhouse@tutorial@bkr_tut_ig3@"@',
         anim = 'machinic_loop_mechandplayer',
         flags = 1,
-    }, {}, {}, function() -- Play When Done
+    }, {}, {}, function() -- Play When Done 
         MRFW.Functions.TriggerCallback('jacob-carboost:server:checkvin', function(result)
             if result and result.owner == PlayerData.citizenid then
                 if result.vinscratch == 1 then
@@ -678,7 +678,7 @@ RegisterNetEvent('jacob-carboost:client:vinscratch', function(veh)
             else
                 MRFW.Functions.TriggerCallback('MRFW:HasItemV2', function(has, info)
                     if has then
-                        if info.amount >= 15 then
+                        if info.amount >= 3 then
                             -- MRFW.Functions.Notify('VIN Scratched, you can change your plate number', 'primary')
                             local vehProp = MRFW.Functions.GetVehicleProperties(veh)
                             TriggerServerEvent('jacob-carboost:server:vinscratch', ID, vehProp, carmodel)

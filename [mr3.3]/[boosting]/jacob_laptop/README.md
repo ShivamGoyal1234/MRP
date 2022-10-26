@@ -18,7 +18,7 @@
 
 1. Import db.sql to your database
 
-2. Go to your qb-core/server/player.lua, and find `MRFW.Player.CheckPlayerData function` and paste this snippets
+2. Go to your mrfw/server/player.lua, and find `MRFW.Player.CheckPlayerData function` and paste this snippets
 
 ```lua
     -- Car Boosting
@@ -26,7 +26,7 @@
     PlayerData.metadata['carboostrep'] = PlayerData.metadata['carboostrep'] or 0
 ```
 
-3. Go to your qb-core/shared/items.lua, and add this
+3. Go to your mrfw/shared/items.lua, and add this
 
 ```lua
 -- Hacking

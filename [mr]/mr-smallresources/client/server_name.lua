@@ -3,5 +3,5 @@ function AddTextEntry(key, value)
 end
 
 CreateThread(function()
-  AddTextEntry('FE_THDR_GTAO', 'Mirzapur Roleplay - MR- Framework')
+  AddTextEntry('FE_THDR_GTAO', 'Mirzapur Roleplay - AJ Framework')
 end)

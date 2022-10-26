@@ -1,7 +1,7 @@
 fx_version 'cerulean'
 game 'gta5'
 
-description 'MR--SmallResources'
+description 'MW-SmallResources'
 version '1.0.0'
 
 shared_scripts { 

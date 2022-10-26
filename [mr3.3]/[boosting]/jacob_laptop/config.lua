@@ -16,11 +16,11 @@ Config.Inventory = 'mr-inventory/html/images/' -- qb-inventory/html/images/
 
 Config.MinimumPolice = 0 -- Minimum police
 
-Config.WaitTime = 10 -- Time to wait to get first contract, (in minutes)
+Config.WaitTime = 5 -- Time to wait to get first contract, (in minutes)
 
-Config.MaxContract = 5 -- Max contract that you can handle
+Config.MaxContract = 4 -- Max contract that you can handle
 
-Config.MaxQueueContract = 2 -- Max contract per session / per WaitTime
+Config.MaxQueueContract = 3 -- Max contract per session / per WaitTime
 
 Config.Expire = 6 -- Expire time it'll be random, from 1 to this config
 
@@ -28,7 +28,7 @@ Config.MinRep = 20 -- Minimum reputation that you can get after finish contract
 
 Config.MaxRep = 25 -- Maximum reputation that you can get after finish contract
 
-Config.Payment = 'crypto' -- crypto / bank
+Config.Payment = 'bank' -- crypto / bank
 
 Config.VINChance = 0.1 -- chance police to find out the VIN is scratched or no
 
@@ -104,11 +104,11 @@ Config.Tier = {
             'baller7',
             'hustler',
         },
-        priceminimum = 5,
-        pricemaximum = 10,
-        spawnnpc = false,
+        priceminimum = 500,
+        pricemaximum = 1000,
+        spawnnpc = true,
         attempt = 2,
-        vinprice = 50
+        vinprice = 20000
     },
     ['C'] = {
         location = {
@@ -177,19 +177,17 @@ Config.Tier = {
             'bati',
             'jester',
             'gauntlet3',
-            'neo',
             'vacca',
             'rebla',
             'vectre',
             'zr350',
-            'futo3',
             'massacro',
         },
-        priceminimum = 8,
-        pricemaximum = 12,
+        priceminimum = 8000,
+        pricemaximum = 12000,
         spawnnpc = true,
         attempt = 3,
-        vinprice = 80
+        vinprice = 35000
     },
     ['B'] = {
         location = {
@@ -246,24 +244,19 @@ Config.Tier = {
             'furoregt',
             'premier',
             'baller3',
-            'lynx',
             'kuruma',
             'seven70',
             'banshee2',
             'omnis',
             'cinquemila',
             'rt3000',
-            'dominator7',
             'z2879',
-            'subwrx',
-            'xa21',
-            '2020g900',
         },
-        priceminimum = 10,
-        pricemaximum = 14,
+        priceminimum = 10000,
+        pricemaximum = 14000,
         spawnnpc = true,
         attempt = 4,
-        vinprice = 120
+        vinprice = 50000
     },
     ['A'] = {
         location = {
@@ -343,24 +336,19 @@ Config.Tier = {
             'oracle',
             'sentinel2',
             'superd',
-            'tyrus',
-            'bestiagts',
             'specter2',
             'torero',
             'jugular',
             'penumbra2',
-            'filthynsx',
-            'gt63',
-            'por930',
             'windsor2',
             'champion',
             'jubilee',
         },
-        priceminimum = 12,
-        pricemaximum = 15,
+        priceminimum = 12000,
+        pricemaximum = 15000,
         spawnnpc = true,
         attempt = 5,
-        vinprice = 150
+        vinprice = 70000
     },
     ['A+'] = {
         location = {
@@ -441,23 +429,18 @@ Config.Tier = {
             'xls',
             'tampa',
             'yosemite',
-            'sultanrs',
             'neon',
             'riata',
-            'turismor',
             'tempesta',
             'tailgater',
             'drafter',
-            '22g63',
-            'na1',
-            'a80',
             'euros',
         },
-        priceminimum = 14,
-        pricemaximum = 18,
+        priceminimum = 14000,
+        pricemaximum = 18000,
         spawnnpc = true,
         attempt = 5,
-        vinprice = 180
+        vinprice = 90000
     },
     ['S'] = {
         location = {
@@ -536,24 +519,19 @@ Config.Tier = {
             'infernus2',
             'gauntlet5',
             'buffalo4',
-            'gp1',
             'zentorno',
-            'fmj',
             'italigtb2',
             'visione',
-            'm3e46',
-            'lc500',
-            'lp700',
             'victor',
             'sheava',
             'issi7',
             'zeno',
         },
-        priceminimum = 15,
-        pricemaximum = 20,
+        priceminimum = 15000,
+        pricemaximum = 20000,
         spawnnpc = true,
         attempt = 6,
-        vinprice = 230
+        vinprice = 150000
     },
     ['S+'] = {
         location = {
@@ -629,9 +607,6 @@ Config.Tier = {
             },
         },
         car = {
-            'r8h',
-            'e36prb',
-            'r32',
             '488misha',
             's15rb',
             'sultan3',
@@ -641,14 +616,13 @@ Config.Tier = {
             'nero',
             'growler',
             'coquette4',
-            'sentinelsg4',
             'tezeract',
         },
-        priceminimum = 16,
-        pricemaximum = 22,
+        priceminimum = 16000,
+        pricemaximum = 22000,
         spawnnpc = true,
         attempt = 6,
-        vinprice = 260,
+        vinprice = 200000,
     },
     ['X'] = {
         location = {
@@ -738,10 +712,6 @@ Config.Tier = {
             },
         },
         car = {
-            'm5e60',
-            'deluxo6str',
-            'r35',
-            'fnf4r34',
             'cyclone2',
             'nero2',
             'furia',
@@ -753,11 +723,11 @@ Config.Tier = {
             'calico',
             'prototipo',
         },
-        priceminimum = 18,
-        pricemaximum = 25,
+        priceminimum = 18000,
+        pricemaximum = 25000,
         spawnnpc = true,
         attempt = 8,
-        vinprice = 300,
+        vinprice = 300000,
     }
 }
 

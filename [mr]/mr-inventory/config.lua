@@ -27,6 +27,29 @@ Config.VendingItem = {
         type = "item",
         slot = 2,
     },
+    
+}
+
+Config.itemSnack = {
+    [1] = {
+        name = "tosti",
+        price = 4,
+        amount = 50,
+        info = {},
+        type = "item",
+        slot = 1,
+    }, -- add the rest of your food here
+}
+
+Config.itemCoffee = {
+    [1] = {
+        name = "coffee",
+        price = 7,
+        amount = 50,
+        info = {},
+        type = "item",
+        slot = 1,
+    },
 }
 
 Config.CraftingItems = {

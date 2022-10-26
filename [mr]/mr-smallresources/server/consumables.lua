@@ -593,3 +593,74 @@ MRFW.Functions.CreateUseableItem("nightvision", function(source, item)
         TriggerClientEvent("consumables:client:useNightVision", src)
     end
 end)
+
+MRFW.Functions.CreateUseableItem("uwububbleteablueberry", function(source, item)
+    local src = source
+    local Player = MRFW.Functions.GetPlayer(src)
+    if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:uwububbleteablueberry", source, item.name)
+    end
+end)
+MRFW.Functions.CreateUseableItem("uwububbletearose", function(source, item)
+    local src = source
+    local Player = MRFW.Functions.GetPlayer(src)
+    if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:uwububbleteablueberry", source, item.name)
+    end
+end)
+MRFW.Functions.CreateUseableItem("uwububbleteamint", function(source, item)
+    local src = source
+    local Player = MRFW.Functions.GetPlayer(src)
+    if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:uwububbleteablueberry", source, item.name)
+    end
+end)
+MRFW.Functions.CreateUseableItem("uwupancake", function(source, item)
+    local src = source
+    local Player = MRFW.Functions.GetPlayer(src)
+    if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:EatPancakes", source, item.name)
+    end
+end)
+MRFW.Functions.CreateUseableItem("uwucupcake", function(source, item)
+    local src = source
+    local Player = MRFW.Functions.GetPlayer(src)
+    if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:EatCupcakes", source, item.name)
+    end
+end)
+MRFW.Functions.CreateUseableItem("uwuvanillasandy", function(source, item)
+    local src = source
+    local Player = MRFW.Functions.GetPlayer(src)
+    if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:uwuvanillasandy", source, item.name)
+    end
+end)
+MRFW.Functions.CreateUseableItem("uwuchocsandy", function(source, item)
+    local src = source
+    local Player = MRFW.Functions.GetPlayer(src)
+    if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:uwuchocsandy", source, item.name)
+    end
+end)
+MRFW.Functions.CreateUseableItem("uwubudhabowl", function(source, item)
+    local src = source
+    local Player = MRFW.Functions.GetPlayer(src)
+    if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:uwubudhabowl", source, item.name)
+    end
+end)
+MRFW.Functions.CreateUseableItem("uwusushi", function(source, item)
+    local src = source
+    local Player = MRFW.Functions.GetPlayer(src)
+    if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:EatPancakes", source, item.name)
+    end
+end)
+MRFW.Functions.CreateUseableItem("uwumisosoup", function(source, item)
+    local src = source
+    local Player = MRFW.Functions.GetPlayer(src)
+    if Player.Functions.RemoveItem(item.name, 1, item.slot) then
+        TriggerClientEvent("consumables:client:uwumisosoup", source, item.name)
+    end
+end)

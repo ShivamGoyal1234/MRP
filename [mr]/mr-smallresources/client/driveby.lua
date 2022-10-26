@@ -1,7 +1,7 @@
 -- CONFIG --
 
 -- Allow passengers to shoot
-local passengerDriveBy = true
+local passengerDriveBy = false
 
 -- CODE --
 

@@ -152,7 +152,7 @@ end)
 RegisterNetEvent('jacob-carboost:server:buyItem', function (price, config, first)
    local src = source 
    local pData = MRFW.Functions.GetPlayer(src)
-   pData.Functions.RemoveMoney('crypto', price, 'bought-bennys-item')
+   pData.Functions.RemoveMoney('bank', price, 'bought-bennys-item')
       MySQL.Async.insert('INSERT INTO bennys_shop (citizenid, items) VALUES (@citizenid, @items) ON DUPLICATE KEY UPDATE items = @items', {
          ['@citizenid'] = pData.PlayerData.citizenid,
          ['@items'] = json.encode(config)
@@ -233,7 +233,7 @@ RegisterNetEvent('jacob-carboost:server:vinscratch', function(NetworkID, mods, m
    local citizenid = pData.PlayerData.citizenid
    local timeout = MySQL.Sync.prepare('SELECT timeout FROM players WHERE citizenid = ?',{citizenid})
    if timeout == 0 then
-      pData.Functions.RemoveItem('vehicleticket',15)
+      pData.Functions.RemoveItem('vehicleticket',3)
       MySQL.Sync.execute('UPDATE players SET timeout = ? WHERE citizenid = ?',{Config.Timeout, citizenid})
       MySQL.Async.insert('INSERT INTO player_vehicles (license, citizenid, vehicle, hash, mods, plate, state, vinscratch, vinnumber) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)', {
          pData.PlayerData.license,

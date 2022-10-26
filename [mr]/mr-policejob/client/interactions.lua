@@ -302,7 +302,7 @@ RegisterNetEvent('police:client:EscortPlayer', function()
             TriggerServerEvent("police:server:EscortPlayer", playerId)
         end
     else
-        MRFW.Functions.Notify("No one nearby!", "error")
+        MRFW.Functions.Notify(Lang:t("error.none_nearby"), "error")
     end
 end)
 
@@ -320,19 +320,19 @@ RegisterNetEvent('police:client:KidnapPlayer', function()
     end
 end)
 
-RegisterNetEvent('police:client:CuffPlayerSoft', function(item)
+RegisterNetEvent('police:client:CuffPlayerSoft', function()
     if not IsPedRagdoll(PlayerPedId()) then
         local player, distance = MRFW.Functions.GetClosestPlayer()
         if player ~= -1 and distance < 1.5 then
             local playerId = GetPlayerServerId(player)
-            if not IsPedInAnyVehicle(GetPlayerPed(player)) and not IsPedInAnyVehicle(GetPlayerPed(PlayerPedId())) then
-                TriggerServerEvent("police:server:CuffPlayer", playerId, true, item)
+            if not IsPedInAnyVehicle(GetPlayerPed(player)) and not IsPedInAnyVehicle(PlayerPedId()) then
+                TriggerServerEvent("police:server:CuffPlayer", playerId, true)
                 HandCuffAnimation()
             else
-                MRFW.Functions.Notify("You cant cuff someone in a vehicle", "error")
+                MRFW.Functions.Notify(Lang:t("error.vehicle_cuff"), "error")
             end
         else
-            MRFW.Functions.Notify("No one nearby!", "error")
+            MRFW.Functions.Notify(Lang:t("error.none_nearby"), "error")
         end
     else
         Wait(2000)

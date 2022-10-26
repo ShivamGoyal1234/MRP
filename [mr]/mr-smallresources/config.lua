@@ -85,6 +85,17 @@ Consumeables = {
     ["icecream2"] = math.random(6, 10),
     ["lassi"] = math.random(10, 15),
     ["nimbupani"] = math.random(10, 15),
+    ["uwupancake"] = math.random(25, 34),
+    ["uwubudhabowl"] = math.random(50, 60),
+    ["uwusushi"] = math.random(35, 40),
+    ["uwucupcake"] = math.random(40, 45),
+    ["uwuvanillasandy"] = math.random(30, 40),
+    ["uwuchocsandy"] = math.random(30, 40),
+
+    ["uwububbleteablueberry"] = math.random(40, 45),
+    ["uwububbletearose"] = math.random(40, 45),
+    ["uwububbleteamint"] = math.random(40, 50),
+    ["uwumisosoup"] = math.random(80, 90),
 }
 
 Config.BlacklistedScenarios = {

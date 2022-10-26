@@ -331,6 +331,8 @@ RegisterNetEvent("consumables:client:UseParachute", function(ItemData)
         local ped = PlayerPedId()
         parachuteItemData = ItemData
         -- TriggerServerEvent("equip:parachute", ItemData)
+        TriggerEvent("inventory:client:ItemBox", MRFW.Shared.Items["parachute"], "remove")
+        SetPedParachuteTintIndex(ped, 7)
         GiveWeaponToPed(ped, GetHashKey("GADGET_PARACHUTE"), 1, false)
         local ParachuteData = {
             outfitData = {
@@ -1012,12 +1014,15 @@ RegisterNetEvent("consumables:client:UseOxy", function()
         TriggerEvent("inventory:client:ItemBox", MRFW.Shared.Items["oxy"], "remove")
         TriggerEvent("hospital:client:HealInjuries")
         TriggerServerEvent('hud:server:RelieveStress', math.random(6, 10))
+        AddArmourToPed(PlayerPedId(), math.random(6,8))
         SetEntityHealth(PlayerPedId(), GetEntityHealth(PlayerPedId()) + 15)
     end, function() -- Cancel
         StopAnimTask(PlayerPedId(), "mp_suicide", "pill", 1.0)
         MRFW.Functions.Notify("Fail", "error")
     end)
 end)
+
+
 
 
 RegisterNetEvent("consumables:client:MakeJoint", function()
@@ -1696,5 +1701,121 @@ RegisterNetEvent("consumables:client:Drinktank", function(itemName)
     }, {}, {}, {}, function() -- Done
         TriggerEvent('dpemote:custom:animation', {"c"})
         TriggerServerEvent("MRFW:Server:SetMetaData", "thirst", MRFW.Functions.GetPlayerData().metadata["thirst"] + 5)
+    end)
+end)
+RegisterNetEvent("consumables:client:uwububbleteablueberry", function(itemName)
+    TriggerEvent('animations:client:EmoteCommandStart', {"bubbletea"})
+    action = true
+    MRFW.Functions.Progressbar("drink_something", "Popping some Bubble Tea..", 10000, false, true, {
+        disableMovement = false,
+        disableCarMovement = false,
+        disableMouse = false,
+        disableCombat = true,
+    }, {}, {}, {}, function() -- Done
+        TriggerEvent("inventory:client:ItemBox", MRFW.Shared.Items[itemName], "remove")
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        DeleteObject(prop)
+        TriggerServerEvent("MRFW:Server:SetMetaData", "thirst", MRFW.Functions.GetPlayerData().metadata["thirst"] + Consumeables[itemName])
+        action = false
+    end)
+end)
+RegisterNetEvent("consumables:client:uwumisosoup", function(itemName)
+    TriggerEvent('animations:client:EmoteCommandStart', {"misosoup"})
+    action = true
+    MRFW.Functions.Progressbar("drink_something", "Supping some Soup..", 10000, false, true, {
+        disableMovement = false,
+        disableCarMovement = false,
+        disableMouse = false,
+        disableCombat = true,
+    }, {}, {}, {}, function() -- Done
+        TriggerEvent("inventory:client:ItemBox", MRFW.Shared.Items[itemName], "remove")
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        DeleteObject(prop)
+        TriggerServerEvent("MRFW:Server:SetMetaData", "thirst", MRFW.Functions.GetPlayerData().metadata["thirst"] + Consumeables[itemName])
+        action = false
+    end)
+end)
+
+RegisterNetEvent("consumables:client:EatPancakes", function(itemName)
+    TriggerEvent('animations:client:EmoteCommandStart', {"uwupancake"})
+    action = true
+    MRFW.Functions.Progressbar("eat_something", "Supping some Soup..", 10000, false, true, {
+        disableMovement = false,
+        disableCarMovement = false,
+        disableMouse = false,
+        disableCombat = true,
+    }, {}, {}, {}, function() -- Done
+        TriggerEvent("inventory:client:ItemBox", MRFW.Shared.Items[itemName], "remove")
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        DeleteObject(prop)
+        TriggerServerEvent("MRFW:Server:SetMetaData", "hunger", MRFW.Functions.GetPlayerData().metadata["hunger"] + Consumeables[itemName])
+        action = false
+    end)
+end)
+
+
+RegisterNetEvent("consumables:client:EatCupcakes", function(itemName)
+    TriggerEvent('animations:client:EmoteCommandStart', {"uwucupcake"})
+    action = true
+    MRFW.Functions.Progressbar("eat_something", "Supping some Soup..", 10000, false, true, {
+        disableMovement = false,
+        disableCarMovement = false,
+        disableMouse = false,
+        disableCombat = true,
+    }, {}, {}, {}, function() -- Done
+        TriggerEvent("inventory:client:ItemBox", MRFW.Shared.Items[itemName], "remove")
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        DeleteObject(prop)
+        TriggerServerEvent("MRFW:Server:SetMetaData", "hunger", MRFW.Functions.GetPlayerData().metadata["hunger"] + Consumeables[itemName])
+        action = false
+    end)
+end)
+
+RegisterNetEvent("consumables:client:uwubudhabowl", function(itemName)
+    TriggerEvent('animations:client:EmoteCommandStart', {"budhabowl"})
+    action = true
+    MRFW.Functions.Progressbar("eat_something", "Banging a bowl of goodness..", 10000, false, true, {
+        disableMovement = false,
+        disableCarMovement = false,
+        disableMouse = false,
+        disableCombat = true,
+    }, {}, {}, {}, function() -- Done
+        TriggerEvent("inventory:client:ItemBox", MRFW.Shared.Items[itemName], "remove")
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        DeleteObject(prop)
+        TriggerServerEvent("MRFW:Server:SetMetaData", "hunger", MRFW.Functions.GetPlayerData().metadata["hunger"] + Consumeables[itemName])
+        action = false
+    end)
+end)
+RegisterNetEvent("consumables:client:uwuvanillasandy", function(itemName)
+    TriggerEvent('animations:client:EmoteCommandStart', {"uwusandy"})
+    action = true
+    MRFW.Functions.Progressbar("eat_something", "uWu Icecream Mmm..", 10000, false, true, {
+        disableMovement = false,
+        disableCarMovement = false,
+        disableMouse = false,
+        disableCombat = true,
+    }, {}, {}, {}, function() -- Done
+        TriggerEvent("inventory:client:ItemBox", MRFW.Shared.Items[itemName], "remove")
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        DeleteObject(prop)
+        TriggerServerEvent("MRFW:Server:SetMetaData", "hunger", MRFW.Functions.GetPlayerData().metadata["hunger"] + Consumeables[itemName])
+        action = false
+    end)
+end)
+RegisterNetEvent("consumables:client:uwuchocsandy", function(itemName)
+    TriggerEvent('animations:client:EmoteCommandStart', {"uwusandy"})
+    action = true
+    MRFW.Functions.Progressbar("eat_something", "uWu Icecream Mmm..", 10000, false, true, {
+        disableMovement = false,
+        disableCarMovement = false,
+        disableMouse = false,
+        disableCombat = true,
+    }, {}, {}, {}, function() -- Done
+        TriggerEvent("inventory:client:ItemBox", MRFW.Shared.Items[itemName], "remove")
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        DeleteObject(prop)
+        TriggerServerEvent("MRFW:Server:SetMetaData", "hunger", MRFW.Functions.GetPlayerData().metadata["hunger"] + Consumeables[itemName])
+        action = false
     end)
 end)

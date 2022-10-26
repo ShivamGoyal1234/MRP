@@ -8,6 +8,15 @@ local objects = {
     {x = 295.3752, y = -594.092, z = 42.3272, model = "prop_bench_01a"},
     {x = 299.9927, y = -581.3138, z = 42.27367, model = "prop_bin_05a"},
     {x = -596.0465, y = 2088.56, z = 130.587, model = "prop_mineshaft_door"},
+
+    -- Gabz Casino
+    {x = 1036.43, y = 51.77, z = 69.06, model = "vw_prop_casino_blckjack_01"},
+    {x = 1044.12, y = 53.47, z = 69.06, model = "vw_prop_casino_blckjack_01"}, 
+    {x = 1043.52, y = 56.33, z = 69.06, model = "vw_prop_casino_blckjack_01"}, 
+    {x = 1038.22, y = 55.68, z = 69.06, model = "vw_prop_casino_blckjack_01"},
+    {x = 1025.9, y = 61.5, z = 69.87, model = "vw_prop_casino_blckjack_01b"},
+    {x = 1030.79, y = 40.68, z = 69.87, model = "vw_prop_casino_blckjack_01b"},
+
 }
 
 CreateThread(function()
