@@ -533,13 +533,13 @@ function MRFW.Functions.GetVehicleProperties(vehicle)
             doorStatus[i] = IsVehicleDoorDamaged(vehicle, i) == 1
         end
 
-        local eeee = MRFW.Shared.Round(exports['aj-mechanicjob']:GetVehicleStatus(MRFW.Functions.GetPlate(vehicle), 'engine'), 0.1)
-        local ffff = MRFW.Shared.Round(exports['aj-mechanicjob']:GetVehicleStatus(MRFW.Functions.GetPlate(vehicle), 'body'), 0.1)
-        local gggg = exports['aj-mechanicjob']:GetVehicleStatus(MRFW.Functions.GetPlate(vehicle), "fuel")
-        local hhhh = exports['aj-mechanicjob']:GetVehicleStatus(MRFW.Functions.GetPlate(vehicle), "clutch")
-        local iiii = exports['aj-mechanicjob']:GetVehicleStatus(MRFW.Functions.GetPlate(vehicle), "brakes")
-        local jjjj = exports['aj-mechanicjob']:GetVehicleStatus(MRFW.Functions.GetPlate(vehicle), "axle")
-        local kkkk = exports['aj-mechanicjob']:GetVehicleStatus(MRFW.Functions.GetPlate(vehicle), "radiator")
+        local eeee = MRFW.Shared.Round(exports['mr-mechanicjob']:GetVehicleStatus(MRFW.Functions.GetPlate(vehicle), 'engine'), 0.1)
+        local ffff = MRFW.Shared.Round(exports['mr-mechanicjob']:GetVehicleStatus(MRFW.Functions.GetPlate(vehicle), 'body'), 0.1)
+        local gggg = exports['mr-mechanicjob']:GetVehicleStatus(MRFW.Functions.GetPlate(vehicle), "fuel")
+        local hhhh = exports['mr-mechanicjob']:GetVehicleStatus(MRFW.Functions.GetPlate(vehicle), "clutch")
+        local iiii = exports['mr-mechanicjob']:GetVehicleStatus(MRFW.Functions.GetPlate(vehicle), "brakes")
+        local jjjj = exports['mr-mechanicjob']:GetVehicleStatus(MRFW.Functions.GetPlate(vehicle), "axle")
+        local kkkk = exports['mr-mechanicjob']:GetVehicleStatus(MRFW.Functions.GetPlate(vehicle), "radiator")
 
         return {
             model = GetEntityModel(vehicle),
@@ -666,30 +666,30 @@ function MRFW.Functions.SetVehicleProperties(vehicle, props)
         end
         if props.bodyHealth then
             SetVehicleBodyHealth(vehicle, props.bodyHealth + 0.0)
-            exports['aj-mechanicjob']:SetVehicleStatus(MRFW.Functions.GetPlate(vehicle), 'body', props.bodyHealth + 0.0)
+            exports['mr-mechanicjob']:SetVehicleStatus(MRFW.Functions.GetPlate(vehicle), 'body', props.bodyHealth + 0.0)
         end
         if props.engineHealth then
             SetVehicleEngineHealth(vehicle, props.engineHealth + 0.0)
-            exports['aj-mechanicjob']:SetVehicleStatus(MRFW.Functions.GetPlate(vehicle), 'engine', props.engineHealth + 0.0)
+            exports['mr-mechanicjob']:SetVehicleStatus(MRFW.Functions.GetPlate(vehicle), 'engine', props.engineHealth + 0.0)
         end
         if props.tankHealth then
-            exports['aj-mechanicjob']:SetVehicleStatus(MRFW.Functions.GetPlate(vehicle), 'fuel', props.tankHealth)
+            exports['mr-mechanicjob']:SetVehicleStatus(MRFW.Functions.GetPlate(vehicle), 'fuel', props.tankHealth)
         end
         if props.clutchHealth then
-            exports['aj-mechanicjob']:SetVehicleStatus(MRFW.Functions.GetPlate(vehicle), 'clutch', props.clutchHealth)
+            exports['mr-mechanicjob']:SetVehicleStatus(MRFW.Functions.GetPlate(vehicle), 'clutch', props.clutchHealth)
         end
         if props.brakesHealth then
-            exports['aj-mechanicjob']:SetVehicleStatus(MRFW.Functions.GetPlate(vehicle), 'brakes', props.brakesHealth)
+            exports['mr-mechanicjob']:SetVehicleStatus(MRFW.Functions.GetPlate(vehicle), 'brakes', props.brakesHealth)
         end
         if props.axleHealth then
-            exports['aj-mechanicjob']:SetVehicleStatus(MRFW.Functions.GetPlate(vehicle), 'axle', props.axleHealth)
+            exports['mr-mechanicjob']:SetVehicleStatus(MRFW.Functions.GetPlate(vehicle), 'axle', props.axleHealth)
         end
         if props.radiatorHealth then
-            exports['aj-mechanicjob']:SetVehicleStatus(MRFW.Functions.GetPlate(vehicle), 'radiator', props.radiatorHealth)
+            exports['mr-mechanicjob']:SetVehicleStatus(MRFW.Functions.GetPlate(vehicle), 'radiator', props.radiatorHealth)
         end
         if props.fuelLevel then
             SetVehicleFuelLevel(vehicle, props.fuelLevel + 0.0)
-            exports['aj-fuel']:SetFuel(vehicle, props.fuelLevel + 0.0)
+            exports['mr-fuel']:SetFuel(vehicle, props.fuelLevel + 0.0)
         end
         if props.dirtLevel then
             SetVehicleDirtLevel(vehicle, props.dirtLevel + 0.0)

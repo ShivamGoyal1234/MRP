@@ -1,7 +1,7 @@
 fx_version 'cerulean'
 game 'gta5'
 
-description 'AJ-Houses'
+description 'MR-Houses'
 version '1.0.0'
 
 server_scripts {

@@ -13,7 +13,7 @@ end
 
 function MRFW.Functions.GetIdentifier(source, idtype)
     local src = source
-    local idtype = idtype or AJConfig.IdentifierType
+    local idtype = idtype or MRConfig.IdentifierType
     for _, identifier in pairs(GetPlayerIdentifiers(src)) do
         if string.find(identifier, idtype) then
             return identifier
@@ -73,7 +73,7 @@ end
 
 -- Will return an array of aj Player class instances
 -- unlike the GetPlayers() wrapper which only returns IDs
-function MRFW.Functions.GetAJPlayers()
+function MRFW.Functions.GetMRPlayers()
     return MRFW.Players
 end
 
@@ -194,7 +194,7 @@ function PaycheckLoop()
             print(Player.PlayerData.charinfo.lastname)
             print(Player.PlayerData.job)
             print(Player.PlayerData.job.payment)
-            if AJConfig.Money.OnlyPayWhenDuty then
+            if MRConfig.Money.OnlyPayWhenDuty then
                 if Player.PlayerData.job.onduty then
                     print('onduty')
                     Player.Functions.AddMoney('bank', payment)
@@ -203,7 +203,7 @@ function PaycheckLoop()
                 else
                     print('offduty')
                     local aa = payment / 100
-                    local bb = aa * AJConfig.Money.Percent
+                    local bb = aa * MRConfig.Money.Percent
                     print('calculate')
                     Player.Functions.AddMoney('bank', bb)
                     TriggerClientEvent('MRFW:Notify', Player.PlayerData.source, ('You received your paycheck of $%s'):format(payment))
@@ -540,7 +540,7 @@ function GenerateSecretCode()
     result.code = final
     SaveResourceFile(GetCurrentResourceName(), "./lib/secret.json", json.encode(result), -1)
     TriggerEvent('change:secret:pd', final)
-    TriggerClientEvent('aj-radio:LeaveRestrictedRadio', -1)
+    TriggerClientEvent('mr-radio:LeaveRestrictedRadio', -1)
 end
 
 function GetSecretCode()

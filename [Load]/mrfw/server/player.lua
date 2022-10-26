@@ -166,7 +166,7 @@ function MRFW.Player.CheckPlayerData(source, PlayerData)
     PlayerData.gang.grade.name = PlayerData.gang.grade.name or 'none'
     PlayerData.gang.grade.level = PlayerData.gang.grade.level or 0
     -- Other
-    PlayerData.position = PlayerData.position or AJConfig.DefaultSpawn
+    PlayerData.position = PlayerData.position or MRConfig.DefaultSpawn
     PlayerData.LoggedIn = true
     PlayerData = MRFW.Player.LoadInventory(PlayerData)
     MRFW.Player.CreatePlayer(PlayerData)
@@ -293,9 +293,9 @@ function MRFW.Player.CreatePlayer(PlayerData)
             self.PlayerData.money[moneytype] = self.PlayerData.money[moneytype] + amount
             self.Functions.UpdatePlayerData()
             if amount > 100000 then
-                TriggerEvent('aj-log:server:CreateLog', 'playermoney', 'AddMoney', 'lightgreen', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** $' .. amount .. ' (' .. moneytype .. ') added, new ' .. moneytype .. ' balance: ' .. self.PlayerData.money[moneytype], true)
+                TriggerEvent('mr-log:server:CreateLog', 'playermoney', 'AddMoney', 'lightgreen', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** $' .. amount .. ' (' .. moneytype .. ') added, new ' .. moneytype .. ' balance: ' .. self.PlayerData.money[moneytype], true)
             else
-                TriggerEvent('aj-log:server:CreateLog', 'playermoney', 'AddMoney', 'lightgreen', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** $' .. amount .. ' (' .. moneytype .. ') added, new ' .. moneytype .. ' balance: ' .. self.PlayerData.money[moneytype])
+                TriggerEvent('mr-log:server:CreateLog', 'playermoney', 'AddMoney', 'lightgreen', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** $' .. amount .. ' (' .. moneytype .. ') added, new ' .. moneytype .. ' balance: ' .. self.PlayerData.money[moneytype])
             end
             if moneytype ~= 'crypto' then
                 TriggerClientEvent('hud:client:OnMoneyChange', self.PlayerData.source, moneytype, amount, false, reason)
@@ -323,15 +323,15 @@ function MRFW.Player.CreatePlayer(PlayerData)
             self.PlayerData.money[moneytype] = self.PlayerData.money[moneytype] - amount
             self.Functions.UpdatePlayerData()
             if amount > 100000 then
-                TriggerEvent('aj-log:server:CreateLog', 'playermoney', 'RemoveMoney', 'red', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** $' .. amount .. ' (' .. moneytype .. ') removed, new ' .. moneytype .. ' balance: ' .. self.PlayerData.money[moneytype], true)
+                TriggerEvent('mr-log:server:CreateLog', 'playermoney', 'RemoveMoney', 'red', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** $' .. amount .. ' (' .. moneytype .. ') removed, new ' .. moneytype .. ' balance: ' .. self.PlayerData.money[moneytype], true)
             else
-                TriggerEvent('aj-log:server:CreateLog', 'playermoney', 'RemoveMoney', 'red', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** $' .. amount .. ' (' .. moneytype .. ') removed, new ' .. moneytype .. ' balance: ' .. self.PlayerData.money[moneytype])
+                TriggerEvent('mr-log:server:CreateLog', 'playermoney', 'RemoveMoney', 'red', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** $' .. amount .. ' (' .. moneytype .. ') removed, new ' .. moneytype .. ' balance: ' .. self.PlayerData.money[moneytype])
             end
             if moneytype ~= 'crypto' then
                 TriggerClientEvent('hud:client:OnMoneyChange', self.PlayerData.source, moneytype, amount, true, reason)
             end
             if moneytype == 'bank' then
-                TriggerClientEvent('aj-phone:client:RemoveBankMoney', self.PlayerData.source, amount)
+                TriggerClientEvent('mr-phone:client:RemoveBankMoney', self.PlayerData.source, amount)
             end
             return true
         end
@@ -348,7 +348,7 @@ function MRFW.Player.CreatePlayer(PlayerData)
         if self.PlayerData.money[moneytype] then
             self.PlayerData.money[moneytype] = amount
             self.Functions.UpdatePlayerData()
-            TriggerEvent('aj-log:server:CreateLog', 'playermoney', 'SetMoney', 'green', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** $' .. amount .. ' (' .. moneytype .. ') set, new ' .. moneytype .. ' balance: ' .. self.PlayerData.money[moneytype])
+            TriggerEvent('mr-log:server:CreateLog', 'playermoney', 'SetMoney', 'green', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** $' .. amount .. ' (' .. moneytype .. ') set, new ' .. moneytype .. ' balance: ' .. self.PlayerData.money[moneytype])
             return true
         end
         return false
@@ -380,7 +380,7 @@ function MRFW.Player.CreatePlayer(PlayerData)
             if (slot and self.PlayerData.items[slot]) and (self.PlayerData.items[slot].name:lower() == item:lower()) and (itemInfo['type'] == 'item' and not itemInfo['unique']) then
                 self.PlayerData.items[slot].amount = self.PlayerData.items[slot].amount + amount
                 self.Functions.UpdatePlayerData('dontUpdateChat', true)
-                TriggerEvent('aj-log:server:CreateLog', 'playerinventory', 'AddItem', 'green', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** got item: [slot:' .. slot .. '], itemname: ' .. self.PlayerData.items[slot].name .. ', added amount: ' .. amount .. ', new total amount: ' .. self.PlayerData.items[slot].amount)
+                TriggerEvent('mr-log:server:CreateLog', 'playerinventory', 'AddItem', 'green', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** got item: [slot:' .. slot .. '], itemname: ' .. self.PlayerData.items[slot].name .. ', added amount: ' .. amount .. ', new total amount: ' .. self.PlayerData.items[slot].amount)
                 return true
             elseif (not itemInfo['unique'] and slot or slot and self.PlayerData.items[slot] == nil) then
                 local a = info
@@ -417,10 +417,10 @@ function MRFW.Player.CreatePlayer(PlayerData)
                 end
                 self.PlayerData.items[slot] = { name = itemInfo['name'], amount = amount, info = a or '', label = itemInfo['label'], description = itemInfo['description'] or '', weight = itemInfo['weight'], type = itemInfo['type'], unique = itemInfo['unique'], useable = itemInfo['useable'], image = itemInfo['image'], shouldClose = itemInfo['shouldClose'], slot = slot, combinable = itemInfo['combinable'] }
                 self.Functions.UpdatePlayerData('dontUpdateChat', true)
-                TriggerEvent('aj-log:server:CreateLog', 'playerinventory', 'AddItem', 'green', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** got item: [slot:' .. slot .. '], itemname: ' .. self.PlayerData.items[slot].name .. ', added amount: ' .. amount .. ', new total amount: ' .. self.PlayerData.items[slot].amount)
+                TriggerEvent('mr-log:server:CreateLog', 'playerinventory', 'AddItem', 'green', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** got item: [slot:' .. slot .. '], itemname: ' .. self.PlayerData.items[slot].name .. ', added amount: ' .. amount .. ', new total amount: ' .. self.PlayerData.items[slot].amount)
                 return true
             elseif (itemInfo['unique']) or (not slot or slot == nil) or (itemInfo['type'] == 'weapon') then
-                for i = 1, AJConfig.Player.MaxInvSlots, 1 do
+                for i = 1, MRConfig.Player.MaxInvSlots, 1 do
                     if self.PlayerData.items[i] == nil then
                         local a = info
                         for k,v in pairs(customitemtable) do
@@ -447,7 +447,7 @@ function MRFW.Player.CreatePlayer(PlayerData)
                         end
                         self.PlayerData.items[i] = { name = itemInfo['name'], amount = amount, info = a or '', label = itemInfo['label'], description = itemInfo['description'] or '', weight = itemInfo['weight'], type = itemInfo['type'], unique = itemInfo['unique'], useable = itemInfo['useable'], image = itemInfo['image'], shouldClose = itemInfo['shouldClose'], slot = i, combinable = itemInfo['combinable'] }
                         self.Functions.UpdatePlayerData('dontUpdateChat', true)
-                        TriggerEvent('aj-log:server:CreateLog', 'playerinventory', 'AddItem', 'green', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** got item: [slot:' .. i .. '], itemname: ' .. self.PlayerData.items[i].name .. ', added amount: ' .. amount .. ', new total amount: ' .. self.PlayerData.items[i].amount)
+                        TriggerEvent('mr-log:server:CreateLog', 'playerinventory', 'AddItem', 'green', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** got item: [slot:' .. i .. '], itemname: ' .. self.PlayerData.items[i].name .. ', added amount: ' .. amount .. ', new total amount: ' .. self.PlayerData.items[i].amount)
                         return true
                     end
                 end
@@ -465,12 +465,12 @@ function MRFW.Player.CreatePlayer(PlayerData)
             if self.PlayerData.items[slot].amount > amount then
                 self.PlayerData.items[slot].amount = self.PlayerData.items[slot].amount - amount
                 self.Functions.UpdatePlayerData('dontUpdateChat', true)
-                TriggerEvent('aj-log:server:CreateLog', 'playerinventory', 'RemoveItem', 'red', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** lost item: [slot:' .. slot .. '], itemname: ' .. self.PlayerData.items[slot].name .. ', removed amount: ' .. amount .. ', new total amount: ' .. self.PlayerData.items[slot].amount)
+                TriggerEvent('mr-log:server:CreateLog', 'playerinventory', 'RemoveItem', 'red', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** lost item: [slot:' .. slot .. '], itemname: ' .. self.PlayerData.items[slot].name .. ', removed amount: ' .. amount .. ', new total amount: ' .. self.PlayerData.items[slot].amount)
                 return true
             elseif self.PlayerData.items[slot].amount == amount then
                 self.PlayerData.items[slot] = nil
                 self.Functions.UpdatePlayerData('dontUpdateChat', true)
-                TriggerEvent('aj-log:server:CreateLog', 'playerinventory', 'RemoveItem', 'red', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** lost item: [slot:' .. slot .. '], itemname: ' .. item .. ', removed amount: ' .. amount .. ', item removed')
+                TriggerEvent('mr-log:server:CreateLog', 'playerinventory', 'RemoveItem', 'red', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** lost item: [slot:' .. slot .. '], itemname: ' .. item .. ', removed amount: ' .. amount .. ', item removed')
                 return true
             end
         else
@@ -481,12 +481,12 @@ function MRFW.Player.CreatePlayer(PlayerData)
                     if self.PlayerData.items[slot].amount > amountToRemove then
                         self.PlayerData.items[slot].amount = self.PlayerData.items[slot].amount - amountToRemove
                         self.Functions.UpdatePlayerData('dontUpdateChat', true)
-                        TriggerEvent('aj-log:server:CreateLog', 'playerinventory', 'RemoveItem', 'red', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** lost item: [slot:' .. slot .. '], itemname: ' .. self.PlayerData.items[slot].name .. ', removed amount: ' .. amount .. ', new total amount: ' .. self.PlayerData.items[slot].amount)
+                        TriggerEvent('mr-log:server:CreateLog', 'playerinventory', 'RemoveItem', 'red', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** lost item: [slot:' .. slot .. '], itemname: ' .. self.PlayerData.items[slot].name .. ', removed amount: ' .. amount .. ', new total amount: ' .. self.PlayerData.items[slot].amount)
                         return true
                     elseif self.PlayerData.items[slot].amount == amountToRemove then
                         self.PlayerData.items[slot] = nil
                         self.Functions.UpdatePlayerData('dontUpdateChat', true)
-                        TriggerEvent('aj-log:server:CreateLog', 'playerinventory', 'RemoveItem', 'red', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** lost item: [slot:' .. slot .. '], itemname: ' .. item .. ', removed amount: ' .. amount .. ', item removed')
+                        TriggerEvent('mr-log:server:CreateLog', 'playerinventory', 'RemoveItem', 'red', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** lost item: [slot:' .. slot .. '], itemname: ' .. item .. ', removed amount: ' .. amount .. ', item removed')
                         return true
                     end
                 end
@@ -498,13 +498,13 @@ function MRFW.Player.CreatePlayer(PlayerData)
     self.Functions.SetInventory = function(items, dontUpdateChat)
         self.PlayerData.items = items
         self.Functions.UpdatePlayerData(dontUpdateChat)
-        -- TriggerEvent('aj-log:server:CreateLog', 'playerinventory2', 'SetInventory', 'blue', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** items set: ' .. json.encode(items))
+        -- TriggerEvent('mr-log:server:CreateLog', 'playerinventory2', 'SetInventory', 'blue', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** items set: ' .. json.encode(items))
     end
 
     self.Functions.ClearInventory = function()
         self.PlayerData.items = {}
         self.Functions.UpdatePlayerData('dontUpdateChat', true)
-        TriggerEvent('aj-log:server:CreateLog', 'playerinventory', 'ClearInventory', 'red', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** inventory cleared')
+        TriggerEvent('mr-log:server:CreateLog', 'playerinventory', 'ClearInventory', 'red', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** inventory cleared')
     end
 
     self.Functions.GetItemByName = function(item)
@@ -617,10 +617,10 @@ function MRFW.Player.DeleteCharacter(source, citizenid)
     local result = MySQL.Sync.fetchScalar('SELECT license FROM players where citizenid = ?', { citizenid })
     if license == result then
         MySQL.Async.execute('UPDATE players SET cid = 0 WHERE citizenid = ?', { citizenid })
-        TriggerEvent('aj-log:server:CreateLog', 'joinleave', 'Character Deleted', 'red', '**' .. GetPlayerName(src) .. '** ' .. license .. ' deleted **' .. citizenid .. '**..')
+        TriggerEvent('mr-log:server:CreateLog', 'joinleave', 'Character Deleted', 'red', '**' .. GetPlayerName(src) .. '** ' .. license .. ' deleted **' .. citizenid .. '**..')
     else
         DropPlayer(src, 'You Have Been Kicked For Exploitation')
-        TriggerEvent('aj-log:server:CreateLog', 'anticheat', 'Anti-Cheat', 'white', GetPlayerName(src) .. ' Has Been Dropped For Character Deletion Exploit', false)
+        TriggerEvent('mr-log:server:CreateLog', 'anticheat', 'Anti-Cheat', 'white', GetPlayerName(src) .. ' Has Been Dropped For Character Deletion Exploit', false)
     end
 end
 
@@ -752,7 +752,7 @@ function MRFW.Player.CreateWalletId()
     local UniqueFound = false
     local WalletId = nil
     while not UniqueFound do
-        WalletId = 'AJ-' .. math.random(11111111, 99999999)
+        WalletId = 'MR-' .. math.random(11111111, 99999999)
         local query = '%' .. WalletId .. '%'
         local result = MySQL.Sync.prepare('SELECT COUNT(*) as count FROM players WHERE metadata LIKE ?', { query })
         if result == 0 then

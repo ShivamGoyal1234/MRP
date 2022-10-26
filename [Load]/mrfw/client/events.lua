@@ -66,7 +66,7 @@ RegisterNetEvent('MRFW:Command:SpawnVehicle', function(vehName)
         lvs = nil
         local vehicle = CreateVehicle(hash, GetEntityCoords(ped), GetEntityHeading(ped), true, false)
         lvs = vehicle
-        exports['aj-fuel']:SetFuel(vehicle, 100)
+        exports['mr-fuel']:SetFuel(vehicle, 100)
         SetVehicleFuelLevel(vehicle, 100.0)
         SetVehicleDirtLevel(vehicle, 0.0)
         TaskWarpPedIntoVehicle(ped, vehicle, -1)
@@ -74,7 +74,7 @@ RegisterNetEvent('MRFW:Command:SpawnVehicle', function(vehName)
         TriggerEvent("vehiclekeys:client:SetOwner", MRFW.Functions.GetPlate(vehicle))
     else
         local vehicle = CreateVehicle(hash, GetEntityCoords(ped), GetEntityHeading(ped), true, false)
-        exports['aj-fuel']:SetFuel(vehicle, 100)
+        exports['mr-fuel']:SetFuel(vehicle, 100)
         SetVehicleFuelLevel(vehicle, 100.0)
         SetVehicleDirtLevel(vehicle, 0.0)
         TaskWarpPedIntoVehicle(ped, vehicle, -1)

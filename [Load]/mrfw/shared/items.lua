@@ -673,7 +673,7 @@ MRShared.Items = {
 	['plasma'] 			     		 = {['name'] = 'plasma', 					['label'] = 'Plasma Torch', 				['weight'] = 10000, 		['type'] = 'item', 		['image'] = 'plasma.png', 			['unique'] = true, 	['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Torch To Blow Something'},
 	['drillbit'] 			     	 = {['name'] = 'drillbit', 					['label'] = 'Drill Bit', 				['weight'] = 10000, 		['type'] = 'item', 		['image'] = 'drill_bit.png', 			['unique'] = true, 	['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Bit To Drill SOmething'},
 
-	-- aj-fuel
+	-- mr-fuel
 	['fuelsiphon'] = {['name'] = 'fuelsiphon', ['label'] = 'Fuel Siphon', ['weight'] = 2500, ['type'] = 'item', ['image'] = 'fuelsiphon.png', ['unique'] = false, ['useable'] = false, ['shouldClose'] = false, ['combinable'] = nil, ['description'] = 'A fuel siphon to extract fuel from vehicles'},
 	
 	---Chair

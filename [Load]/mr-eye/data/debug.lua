@@ -1,4 +1,4 @@
-local targeting = exports['aj-eye']
+local targeting = exports['mr-eye']
 local CurrentResourceName = GetCurrentResourceName()
 
 AddEventHandler(CurrentResourceName..':debug', function(data)

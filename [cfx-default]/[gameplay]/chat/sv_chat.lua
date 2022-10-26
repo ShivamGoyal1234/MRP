@@ -15,7 +15,7 @@ AddEventHandler('_chat:messageEntered', function(author, color, message)
     TriggerEvent('chatMessage', source, author, message)
 
     if not WasEventCanceled() then
-        TriggerEvent("aj-log:server:CreateLog", 'chat', "Chat", "blue", message)
+        TriggerEvent("mr-log:server:CreateLog", 'chat', "Chat", "blue", message)
         --TriggerClientEvent('chatMessage', -1, 'OOC | '..author,  false, message)
     end
 end)

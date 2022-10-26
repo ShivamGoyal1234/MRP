@@ -105,7 +105,7 @@ RegisterNUICallback('chatResult', function(data, cb)
     local r, g, b = 0, 0x99, 255
 
     if data.message:sub(1, 1) == '/' then
-      TriggerServerEvent("aj-log:server:CreateLog", 'chat', GetPlayerName(id), "blue", '/'..data.message:sub(2))
+      TriggerServerEvent("mr-log:server:CreateLog", 'chat', GetPlayerName(id), "blue", '/'..data.message:sub(2))
       ExecuteCommand(data.message:sub(2))
     else
       TriggerServerEvent('_chat:messageEntered', GetPlayerName(id), { r, g, b }, data.message)

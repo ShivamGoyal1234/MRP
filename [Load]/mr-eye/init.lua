@@ -58,7 +58,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -74,7 +74,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -90,7 +90,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -106,7 +106,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -122,7 +122,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -138,7 +138,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -154,7 +154,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -170,7 +170,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -186,7 +186,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -202,7 +202,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -218,7 +218,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -234,7 +234,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -250,7 +250,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -266,7 +266,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -282,7 +282,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -298,7 +298,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -314,7 +314,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -330,7 +330,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -346,7 +346,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -362,7 +362,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -378,7 +378,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -394,7 +394,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -410,7 +410,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -426,7 +426,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -442,7 +442,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -458,7 +458,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -474,7 +474,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -490,7 +490,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -506,7 +506,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-applejob:collect",
+                event = "mr-applejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Apple",
             },
@@ -524,7 +524,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-orangejob:collect",
+                event = "mr-orangejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Orange",
             },
@@ -540,7 +540,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-orangejob:collect",
+                event = "mr-orangejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Orange",
             },
@@ -556,7 +556,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-orangejob:collect",
+                event = "mr-orangejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Orange",
             },
@@ -572,7 +572,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-orangejob:collect",
+                event = "mr-orangejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Orange",
             },
@@ -588,7 +588,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-orangejob:collect",
+                event = "mr-orangejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Orange",
             },
@@ -604,7 +604,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-orangejob:collect",
+                event = "mr-orangejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Orange",
             },
@@ -620,7 +620,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-orangejob:collect",
+                event = "mr-orangejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Orange",
             },
@@ -636,7 +636,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-orangejob:collect",
+                event = "mr-orangejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Orange",
             },
@@ -652,7 +652,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-orangejob:collect",
+                event = "mr-orangejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Orange",
             },
@@ -668,7 +668,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-orangejob:collect",
+                event = "mr-orangejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Orange",
             },
@@ -684,7 +684,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-orangejob:collect",
+                event = "mr-orangejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Orange",
             },
@@ -700,7 +700,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-orangejob:collect",
+                event = "mr-orangejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Orange",
             },
@@ -716,7 +716,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-orangejob:collect",
+                event = "mr-orangejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Orange",
             },
@@ -732,7 +732,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-orangejob:collect",
+                event = "mr-orangejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Orange",
             },
@@ -748,7 +748,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-orangejob:collect",
+                event = "mr-orangejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Orange",
             },
@@ -764,7 +764,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-orangejob:collect",
+                event = "mr-orangejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Orange",
             },
@@ -780,7 +780,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-orangejob:collect",
+                event = "mr-orangejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Orange",
             },
@@ -796,7 +796,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-orangejob:collect",
+                event = "mr-orangejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Orange",
             },
@@ -812,7 +812,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-orangejob:collect",
+                event = "mr-orangejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Orange",
             },
@@ -828,7 +828,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-orangejob:collect",
+                event = "mr-orangejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Orange",
             },
@@ -844,7 +844,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-orangejob:collect",
+                event = "mr-orangejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Orange",
             },
@@ -860,7 +860,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-orangejob:collect",
+                event = "mr-orangejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Orange",
             },
@@ -876,7 +876,7 @@ Config.CircleZones = {
         options = {
             {
                 type = "client",
-                event = "aj-orangejob:collect",
+                event = "mr-orangejob:collect",
                 icon = "fas fa-cogs",
                 label = "Collect Orange",
             },
@@ -922,7 +922,7 @@ Config.BoxZones = {
         options = {
             {
                 type = "client",
-                event = "aj-policejob:ToggleDuty",
+                event = "mr-policejob:ToggleDuty",
                 icon = "fas fa-sign-in-alt",
                 label = "Sign In/Out",
                 job = "police",
@@ -943,7 +943,7 @@ Config.BoxZones = {
         options = {
             {
                 type = "client",
-                event = "aj-policejob:armory",
+                event = "mr-policejob:armory",
                 icon = "fas fa-store",
                 label = "Armory",
                 job = "police",
@@ -1179,19 +1179,19 @@ Config.BoxZones = {
         options = {
             {
                 type = "server",
-                event = "aj-vineyard:server:grapeJuice",
+                event = "mr-vineyard:server:grapeJuice",
                 icon = "fas fa-cogs",
                 label = "Grapes Juice",
             },
 			{
                 type = "client",
-                event = "aj-applejob:applejuice",
+                event = "mr-applejob:applejuice",
                 icon = "fas fa-cogs",
                 label = "Apple Juice",
             },
 			{
                 type = "client",
-                event = "aj-orangejob:orangejuice",
+                event = "mr-orangejob:orangejuice",
                 icon = "fas fa-cogs",
                 label = "Orange Juice",
             },
@@ -1211,7 +1211,7 @@ Config.BoxZones = {
         options = {
             {
                 type = "client",
-                event = "aj-mechanicjob:ToggleDuty",
+                event = "mr-mechanicjob:ToggleDuty",
                 icon = "fas fa-sign-in-alt",
                 label = "Sign In/Out",
                 job = "mechanic",
@@ -2360,7 +2360,7 @@ Config.TargetModels = {
 		options = {
 			{
 				type = "client",
-				event = "aj-shops:marketshop",
+				event = "mr-shops:marketshop",
 				icon = "fas fa-shopping-basket",
 				label = "Open Shop",
 			},
@@ -2443,7 +2443,7 @@ Config.TargetModels = {
         options = {
             {
                 type = "client",
-                event = "aj-sdt:client:openMenu",
+                event = "mr-sdt:client:openMenu",
                 icon = "fas fa-file-invoice",
                 label = "ShopOne Menu",
             },
@@ -2458,7 +2458,7 @@ Config.TargetModels = {
     --     options = {
     --         {
     --             type = "client",
-    --             event = "aj-sdt:client:openMenu",
+    --             event = "mr-sdt:client:openMenu",
     --             icon = "fas fa-file-invoice",
     --             label = "uwu Menu",
     --         },
@@ -2473,7 +2473,7 @@ Config.TargetModels = {
         options = {
             {
                 type = "client",
-                event = "aj-shops:marketshop",
+                event = "mr-shops:marketshop",
                 icon = "fas fa-store",
                 label = "Buy Items",
             },
@@ -2487,7 +2487,7 @@ Config.TargetModels = {
         options = {
             {
                 type = "client",
-                event = "aj-shops:marketshop",
+                event = "mr-shops:marketshop",
                 icon = "fas fa-shopping-cart",
                 label = "Buy Weapons",
             },
@@ -2501,7 +2501,7 @@ Config.TargetModels = {
         options = {
             {
                 type = "client",
-                event = "aj-shops:marketshop",
+                event = "mr-shops:marketshop",
                 icon = "fas fa-wrench",
                 label = "Buy Tools",
             },
@@ -2515,7 +2515,7 @@ Config.TargetModels = {
         options = {
             {
                 type = "client",
-                event = "aj-shops:marketshop",
+                event = "mr-shops:marketshop",
                 icon = "fas fa-circle",
                 label = "Buy Gear",
             },
@@ -2529,7 +2529,7 @@ Config.TargetModels = {
         options = {
             {
                 type = "client",
-                event = "aj-shops:marketshop",
+                event = "mr-shops:marketshop",
                 icon = "fas fa-circle",
                 label = "Buy Electronics",
             },
@@ -2544,7 +2544,7 @@ Config.TargetModels = {
         options = {
             {
                 type = "client",
-                event = "aj-shops:marketshop",
+                event = "mr-shops:marketshop",
                 icon = "fas fa-paw",
                 label = "Open Pet Shop",
             },
@@ -2559,7 +2559,7 @@ Config.TargetModels = {
         options = {
             {
                 type = "client",
-                event = "aj-shops:marketshop",
+                event = "mr-shops:marketshop",
                 icon = "fas fa-circle",
                 label = "Buy Leisures",
             },
@@ -2573,7 +2573,7 @@ Config.TargetModels = {
         options = {
             {
                 type = "client",
-                event = "aj-shops:marketshop",
+                event = "mr-shops:marketshop",
                 icon = "fas fa-circle",
                 label = "Buy",
             },
@@ -2588,7 +2588,7 @@ Config.TargetModels = {
         options = {
             {
                 type = "client",
-                event = "aj-shops:marketshop",
+                event = "mr-shops:marketshop",
                 icon = "fas fa-circle",
                 label = "Buy",
             },
@@ -2603,7 +2603,7 @@ Config.TargetModels = {
         options = {
             {
                 type = "client",
-                event = "aj-shops:marketshop",
+                event = "mr-shops:marketshop",
                 icon = "fas fa-circle",
                 label = "Buy",
             },
@@ -2619,7 +2619,7 @@ Config.TargetModels = {
         options = {
             {
                 type = "client",
-                event = "aj-clothing:clothing",
+                event = "mr-clothing:clothing",
                 icon = "fas fa-tshirt",
                 label = "Buy Clothes",
             },
@@ -2634,13 +2634,13 @@ Config.TargetModels = {
         options = {
             {
                 type = "client",
-                event = "aj-clothing:clothing",
+                event = "mr-clothing:clothing",
                 icon = "fas fa-tshirt",
                 label = "Buy Clothes",
             },
             {
                 type = "client",
-                event = "aj-shops:marketshop",
+                event = "mr-shops:marketshop",
                 icon = "fas fa-bag-shopping",
                 label = "Buy Bag",
             },
@@ -2655,7 +2655,7 @@ Config.TargetModels = {
         options = {
             {
                 type = "client",
-                event = "aj-clothing:barber",
+                event = "mr-clothing:barber",
                 icon = "fas fa-cut",
                 label = "Barber Shop",
             },
@@ -2670,7 +2670,7 @@ Config.TargetModels = {
         options = {
             {
                 type = "client",
-                event = "aj-tattoo:client:tattooppen",
+                event = "mr-tattoo:client:tattooppen",
                 icon = "fas fa-marker",
                 label = "Tattoo Shop",
             },
@@ -2685,25 +2685,25 @@ Config.TargetModels = {
         options = {
             {
                 type = "client",
-                event = "aj-apple:sell",
+                event = "mr-apple:sell",
                 icon = "fas fa-store",
                 label = "Apple Juice Sell",
             },
 			{
                 type = "client",
-                event = "aj-orange:sell",
+                event = "mr-orange:sell",
                 icon = "fas fa-store",
                 label = "Orange Juice Sell",
             },
             {
                 type = "server",
-                event = "aj-vineyard:sellgrapes",
+                event = "mr-vineyard:sellgrapes",
                 icon = "fas fa-store",
                 label = "Grapes Juice Sell",
             },
             {
                 type = "server",
-                event = "aj-vineyard:sellWine",
+                event = "mr-vineyard:sellWine",
                 icon = "fas fa-store",
                 label = "Wine Sell",
             },
@@ -2718,7 +2718,7 @@ Config.TargetModels = {
         options = {
             {
                 type = "client",
-                event = "aj-dt:client:openMenu",
+                event = "mr-dt:client:openMenu",
                 icon = "fas fa-store",
                 label = "Drive Through",
             },

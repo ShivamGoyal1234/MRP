@@ -25,8 +25,8 @@ If applicable, add screenshots to help explain your problem.
 
 **Questions (please complete the following information):**
  - When you last updated: [e.g. last week]
- - Are you using custom resource? which ones? [e.g. zdiscord, aj-target]
- - Have you renamed `aj-` to something custom? [e.g. yes/no]
+ - Are you using custom resource? which ones? [e.g. zdiscord, mr-target]
+ - Have you renamed `mr-` to something custom? [e.g. yes/no]
 
 **Additional context**
 Add any other context about the problem here.

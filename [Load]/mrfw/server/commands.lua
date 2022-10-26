@@ -229,7 +229,7 @@ MRFW.Commands.Add('setgang', 'Set A Players Gang (Admin Only)', { { name = 'id',
     end
 end, 'h-admin')
 
--- Inventory (should be in aj-inventory?)
+-- Inventory (should be in mr-inventory?)
 
 MRFW.Commands.Add('clearinv', 'Clear Players Inventory (Admin Only)', { { name = 'id', help = 'Player ID' } }, false, function(source, args)
     local src = source
@@ -256,7 +256,7 @@ MRFW.Commands.Add('ooc', 'OOC Chat Message', {}, false, function(source, args)
                 multiline = true,
                 args = {'OOC | '.. GetPlayerName(src), message}
             })
-            TriggerEvent('aj-log:server:CreateLog', 'ooc', 'OOC', 'white', '**' .. GetPlayerName(src) .. '** (CitizenID: ' .. Player.PlayerData.citizenid .. ' | ID: ' .. src .. ') **Message:** ' .. message, false)
+            TriggerEvent('mr-log:server:CreateLog', 'ooc', 'OOC', 'white', '**' .. GetPlayerName(src) .. '** (CitizenID: ' .. Player.PlayerData.citizenid .. ' | ID: ' .. src .. ') **Message:** ' .. message, false)
         -- elseif #(GetEntityCoords(GetPlayerPed(src)) - GetEntityCoords(GetPlayerPed(v))) < 20.0 then
         --     TriggerClientEvent('chat:addMessage', v, {
         --         color = { 0, 0, 255},
@@ -270,7 +270,7 @@ MRFW.Commands.Add('ooc', 'OOC Chat Message', {}, false, function(source, args)
         --             multiline = true,
         --             args = {'OOC | '.. GetPlayerName(src), message}
         --         })
-        --         TriggerEvent('aj-log:server:CreateLog', 'ooc', 'OOC', 'white', '**' .. GetPlayerName(src) .. '** (CitizenID: ' .. Player.PlayerData.citizenid .. ' | ID: ' .. src .. ') **Message:** ' .. message, false)
+        --         TriggerEvent('mr-log:server:CreateLog', 'ooc', 'OOC', 'white', '**' .. GetPlayerName(src) .. '** (CitizenID: ' .. Player.PlayerData.citizenid .. ' | ID: ' .. src .. ') **Message:** ' .. message, false)
         --     end
         -- end
     -- end
@@ -295,7 +295,7 @@ MRFW.Commands.Add('looc', 'LOCALOOC Chat Message', {}, false, function(source, a
                     multiline = true,
                     args = {'LOCALOOC(Notif) | '.. GetPlayerName(src), message}
                 })
-                TriggerEvent('aj-log:server:CreateLog', 'ooc', 'LOCALOOC', 'white', '**' .. GetPlayerName(src) .. '** (CitizenID: ' .. Player.PlayerData.citizenid .. ' | ID: ' .. src .. ') **Message:** ' .. message, false)
+                TriggerEvent('mr-log:server:CreateLog', 'ooc', 'LOCALOOC', 'white', '**' .. GetPlayerName(src) .. '** (CitizenID: ' .. Player.PlayerData.citizenid .. ' | ID: ' .. src .. ') **Message:** ' .. message, false)
             end
         end
     end

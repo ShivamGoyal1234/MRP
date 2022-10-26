@@ -13,9 +13,9 @@ AddEventHandler('playerDropped', function()
         local Player = MRFW.Players[src]
         Player.Functions.SetMetaData('armor', GetPedArmour(GetPlayerPed(src)))
         Player.Functions.SetMetaData('health', GetEntityHealth(GetPlayerPed(src)))
-        TriggerEvent('aj-log:server:CreateLog', 'joinleave', 'Dropped', 'red', '**' .. GetPlayerName(src) .. '** (' .. Player.PlayerData.license .. ') left..')
+        TriggerEvent('mr-log:server:CreateLog', 'joinleave', 'Dropped', 'red', '**' .. GetPlayerName(src) .. '** (' .. Player.PlayerData.license .. ') left..')
         if Player.PlayerData.job.name == 'police' and Player.PlayerData.job.name == 'doctor' and Player.PlayerData.job.name == 'mechanic' and Player.PlayerData.job.name == 'government' then
-            TriggerEvent("aj-shiftlog:jobchanged2", Player.PlayerData.job, Player.PlayerData.job, 1, src)
+            TriggerEvent("mr-shiftlog:jobchanged2", Player.PlayerData.job, Player.PlayerData.job, 1, src)
         end
         TriggerEvent('MRFW:Server:playtime:leave', Player.PlayerData.citizenid)
         Player.Functions.Save()
@@ -172,7 +172,7 @@ local function OnPlayerConnecting(name, setKickReason, deferrals)
 	if a2[6]==nil then b6='null'else b6=a2[6]end
 	if a2[7]==nil then b7='null'else b7=a2[7]end
     if a2[8]==nil then b8='null'else b8=a2[8]end
-	TriggerEvent("aj-log:server:CreateLog", "joinleave", "Queue", "orange", "**"..name .. "** ```"..b1..
+	TriggerEvent("mr-log:server:CreateLog", "joinleave", "Queue", "orange", "**"..name .. "** ```"..b1..
                                                                                               "\n"..b2..
                                                                                               "\n"..b3..
                                                                                               "\n"..b4..
@@ -262,7 +262,7 @@ RegisterNetEvent('MRFW:Player:UpdatePlayerPayment', function()
     local Player = MRFW.Functions.GetPlayer(src)
     local payment = Player.PlayerData.job.payment
     if Player.PlayerData.job and Player.PlayerData.job.payment > 0 then
-        if AJConfig.Money.OnlyPayWhenDuty then
+        if MRConfig.Money.OnlyPayWhenDuty then
             if Player.PlayerData.job.onduty then
                 -- Player.Functions.AddMoney('bank', payment)
                 local salary = MySQL.Sync.prepare('SELECT salary FROM players WHERE citizenid = ?',{Player.PlayerData.citizenid})
@@ -271,7 +271,7 @@ RegisterNetEvent('MRFW:Player:UpdatePlayerPayment', function()
                 TriggerClientEvent('MRFW:Notify', Player.PlayerData.source, 'Salary Received collect it from Life Invader')
             else
                 local aa = payment / 100
-                local bb = aa * AJConfig.Money.Percent
+                local bb = aa * MRConfig.Money.Percent
                 -- Player.Functions.AddMoney('bank', bb)
                 local salary = MySQL.Sync.prepare('SELECT salary FROM players WHERE citizenid = ?',{Player.PlayerData.citizenid})
                 local final = salary + bb
@@ -361,7 +361,7 @@ RegisterNetEvent('MRFW:Server:AddItem', function(itemName, amount, slot, info)
     Player.Functions.AddItem(itemName, amount, slot, info)
 end)
 
--- Non-Chat Command Calling (ex: aj-adminmenu)
+-- Non-Chat Command Calling (ex: mr-adminmenu)
 
 RegisterNetEvent('MRFW:CallCommand', function(command, args)
     local src = source
